@@ -377,7 +377,7 @@ nav ul li a:hover{
 
 
 @media(max-width:600px){
-      input{
+      #search{
             width: 270px;
             height:40px;
             border-radius:20px;
@@ -418,7 +418,7 @@ nav ul li a:hover{
             width:120px;
       }
       .form-footer input[type=button]{
-            height:40px;
-            transform: translate(0%,0%);
+            height:26.5px;
+            transform: translate(0%,4%);
       }
 }
