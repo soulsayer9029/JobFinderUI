@@ -1,0 +1,424 @@
+html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      overflow-x: hidden;
+}
+
+body {
+      font-family: "Helvetica Neue",sans-serif;
+      font-weight: lighter;
+}
+
+/* header {
+      width: 100%;
+      height: 100vh;
+      background: url(hero.jpg) no-repeat 50% 50%;
+      background-size: cover;
+} */
+
+.content {
+      width: 94%;
+      margin: 4em auto;
+      font-size: 20px;
+      line-height: 30px;
+      text-align: justify;
+}
+
+.logo {
+      line-height: 60px;
+      position: fixed;
+      float: left;
+      margin: 16px 46px;
+      color: #fff;
+      font-weight: bold;
+      font-size: 20px;
+      letter-spacing: 2px;
+}
+
+nav {
+      position: fixed;
+      width: 100%;
+      line-height: 60px;
+}
+
+nav ul {
+      line-height: 60px;
+      list-style: none;
+      background: rgba(0, 0, 0, 0);
+      overflow: hidden;
+      color: #fff;
+      padding: 0;
+      text-align: right;
+      margin: 0;
+      padding-right: 40px;
+      transition: 1s;
+}
+nav.black{
+      z-index: 100;
+}
+nav.black ul {
+      background: #000;
+}
+
+nav ul li {
+      display: inline-block;
+      padding: 16px 40px;;
+}
+
+nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+}
+nav ul li a:hover{
+      color: #ffc145;
+}
+
+.menu-icon {
+      line-height: 60px;
+      width: 100%;
+      background: #000;
+      text-align: right;
+      box-sizing: border-box;
+      padding: 15px 24px;
+      cursor: pointer;
+      color: #fff;
+      display: none;
+}
+#home{
+      width: 100%;
+      height: 90vh;
+      background: url(hero.jpg) no-repeat 50% 50%;
+      background-size: cover;
+}
+.section-title{
+      display:flex;
+      font-size:5rem;
+      justify-content:center;
+      align-items: center;
+      flex-direction:column;
+
+}
+.section-content a{
+      color:#000;
+}
+.section-content a:hover{
+      color:#000;
+}
+#catcard{
+      z-index:0
+}
+#catcard:hover {
+      transform: scale(0.9, 0.9);
+      box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.11), 
+        -5px -5px 30px 15px rgba(0,0,0,0.11);
+      color: #ffc145;
+    }
+.other-fields{
+      display:flex;
+      justify-content: center;
+      padding:20px;
+      margin:20px;
+
+}
+#other{
+      padding:20px;
+      font-size:1.5rem;
+      background:transparent;
+      color:#000;
+      font-weight:bold;
+      border:1px solid black;
+}
+#other:hover{
+      
+  box-shadow:5px 5px 30px 15px rgba(0, 0, 0, 0.11), 
+  -5px -5px 30px 15px rgba(0,0,0,0.11);
+  background-color:#ffc145;
+  -webkit-transition:0.3s all ease;
+  /* transition:0.3s ease-in; */
+  color:#fff;
+  border:1px solid  #ffc145;
+}
+/* job cards */
+.profile-img {
+      height: 100px;
+      width: 100px;
+      background: url('https://marketing.dcassetcdn.com/blog/35-Famous-Circle-Logos/starbucks.jpg');
+      background-size: cover;
+      background-position: center;
+      position: absolute;
+      top: -25px;
+      left: -25px;
+      border-radius: 50%;
+      box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    }
+    .description{
+      margin-bottom: 20px;
+    }
+    .social {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: calc(100% - 40px);
+      margin: 0 auto;
+    }
+      .social a {
+        text-align: center;
+        border: solid 2px #ff6b6c;;
+        width: 75px;
+        padding: 5px 0;
+        border-radius: 5px;
+      }
+      .social a:hover{
+        background: #ff6b6c;;
+        color: white;
+        cursor: pointer;
+      }
+      #apply{
+            width: 60%;
+            height: 30%;
+            font-size: 2rem;
+            margin: 30px 10% 0 10%;
+            color: #fff;
+            border: none;
+            box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+            border-radius: 5px;
+            background: linear-gradient(45deg, #ff6b6c, #ffc145,  #ffc145, #ff6b6c);
+            background-size: 300% 300%;
+            outline: none;
+            transition: all 200ms ease-in-out;
+      }
+      #apply:hover{
+            box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+            transform: translateY(2px);
+           
+            cursor: pointer;
+      }
+      #job-card{
+            margin:30px;
+            padding:30px;
+            
+            align-items: center;
+      }
+      .job-title{
+            text-align: center;
+            font-size:2rem;
+      }
+      footer{
+            background-color:#000;
+            color:#fff;
+      }
+      footer h6 {
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 40px;
+            position: relative;
+        }
+        footer h6:after {
+            position: absolute;
+            content: "";
+            background: rgb(17, 17, 17);
+            width: 12%;
+            height: 1px;
+            left: 0;
+            bottom: -20px;
+        }
+             .btn-footer {
+                         color:  #fff;
+                      
+                        text-decoration: none;
+                        border: 1px solid;
+                        border-radius: 43px;
+                        font-size: 13px;
+                        padding: 7px 30px;
+                        line-height: 47px;
+             }
+             .btn-footer:hover {
+                        
+                        text-decoration: none;
+                       
+             }
+            .form-footer input[type="text"] {
+            border: none;
+            border-radius: 16px 0 0 16px;
+            outline: none;
+            padding-left: 10px;
+            
+        }
+        ::placeholder {
+            font-size: 10px;
+            padding-left: 10px;
+            font-style: italic;
+        }
+        #news{
+              margin-top:100px;
+        }
+         .form-footer input[type="button"] {
+            border: none;
+            background-color: #ff6b6c;
+            margin-left: -5px;
+            color: #fff;
+            outline: none;
+            border-radius: 0 16px 16px 0;
+            padding: 2px 12px;
+            
+        }
+           
+             footer ul li {
+            list-style: none;
+            display: block;
+        }
+          footer ul  {
+           padding-left: 0;
+        }
+        footer ul  li a{
+          text-decoration: none;
+          color: #fff;
+          text-decoration:none;
+        }
+        .logo-part {
+            border-right: 1px solid  rgb(17, 17, 17);
+            height: 100%;
+            }
+     
+@media(min-width:769px){
+      .road-content{
+            padding:190px;
+            font-size:5rem;
+            color: #fff;
+      }
+      form{
+            transform: translate(10%,-500%);
+      }
+      input{
+            width:40%;
+            height:40px;
+            border-radius: 20px;
+            
+      }
+      #searchbtn{
+            width:60px;
+            height:40px;
+            border-radius: 20px;
+            transform: translateX(-106%)
+
+      }
+
+}
+@media(max-width: 786px) {
+
+      .logo {
+            position: fixed;
+            top: 0;
+            margin-top: 16px;
+      }
+
+      nav ul {
+            max-height: 0px;
+            background: #000;
+      }
+
+      nav.black ul {
+            background: #000;
+      }
+
+      .showing {
+            max-height: 34em;
+      }
+
+      nav ul li {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 24px;
+            text-align: center;
+      }
+
+      .menu-icon {
+            display: block;
+      }
+      
+
+      .road-content{
+            padding-top:300px;
+            padding-left:40px;
+            font-size:5rem;
+            color: #fff;
+      }
+      #search{
+            width: 470px;
+            height:40px;
+            border-radius:20px;
+
+      }
+      #searchbtn{
+            width:60px;
+            height:40px;
+            border-radius: 20px;
+      }
+      #searchform{
+            padding-left:40px;
+      }
+      .job-title{
+            font-size:1.6rem;
+      }
+      .profile-img{
+            width:80px;
+            height:80px
+      } 
+          
+      .form-footer input{
+            transform:translateX(-30%)
+      }
+      .form-footer input[type=button]{
+            height:26px;
+            transform: translate(290%,-97%);
+      }
+}
+
+
+@media(max-width:600px){
+      input{
+            width: 270px;
+            height:40px;
+            border-radius:20px;
+
+      }
+      .road-content{
+            padding-top:200px;
+            font-size:3rem;
+            color: #fff;
+      }
+      #searchbtn{
+            width:60px;
+            height:40px;
+            border-radius: 20px;
+      }
+      .section-title{
+            font-size:2.5rem;            
+      }
+      #searchform{
+            padding-left:0px;
+      }
+      .social{
+            align-items:center;
+      }
+      .social a{
+
+            margin:10px;
+      }
+      .profile-img{
+            width:80px;
+            height:80px
+      }
+      .job-title{
+            font-size:1.6rem;
+      }
+      .form-footer input{
+            transform:translateX(0%);
+            width:120px;
+      }
+      .form-footer input[type=button]{
+            height:40px;
+            transform: translate(0%,0%);
+      }
+}
